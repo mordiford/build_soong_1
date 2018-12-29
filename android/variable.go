@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"aicp/soong/android"
+	"floko/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -117,8 +117,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Aicp variables
-		Aicp android.Product_variables
+		// include Floko variables
+		Floko android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -237,8 +237,8 @@ type productVariables struct {
 
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
-	// include Aicp variables
-	Aicp android.ProductVariables
+	// include Floko variables
+	Floko android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
